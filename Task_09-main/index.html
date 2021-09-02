@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Task_09</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+      <div class="row">
+        <div class="column">
+          <button class="btn btn-dark btn-lg" onclick="lw1();">Launch pod with </button>
+        </div>
+        <div class="column">
+          <button class="btn btn-dark btn-lg" onclick="lw2();">Deploy using Image....</button>
+        </div>
+        <div class="column">
+          <button class="btn btn-dark btn-lg" onclick="lw3();">Expose server on port</button>
+        </div>
+        <div class="column">
+          <button class="btn btn-dark btn-lg" onclick="lw4();">Scale the Replicas...........</button>
+        </div>
+        <div class="column">
+          <button class="btn btn-dark btn-lg" onclick="k8s5();">Delete complete Env.....</button>
+        </div>
+        <div class="column">
+          <button class="btn btn-dark btn-lg" onclick="lw6();">Delete resources.............</button>
+        </div>
+      </div>
+       <br>
+
+       <div class="inputDiv">
+
+       <div id="inputDiv1">
+         <h2>
+           <label><b>Name</b></label>
+           <input id="in11" type="text" placeholder="Enter Name">
+           <br><br>
+           <label><b>Image Name</b></label>
+           <input id="in12" type="text" placeholder="Enter Name">
+         </h2>
+        <br><br>
+   			<button class="btn btn-dark btn-sm" onclick="k8s1();">Click to Run Command</button>
+        <button class="btn btn-light btn-sm" onclick="close1();">Terminate</button>
+        <br><br>
+       </div>
+       <div id="inputDiv2">
+         <h2>
+           <label><b>Pod Name</b></label>
+           <input id="in21" type="text" placeholder="Enter Name">
+           <br><br>
+           <label><b>Image Name</b></label>
+           <input id="in22" type="text" placeholder="Enter Name">
+         </h2>
+        <br><br>
+   			<button class="btn btn-dark btn-sm" onclick="k8s2();">Click to Run Command</button>
+        <button class="btn btn-light btn-sm" onclick="close2();">Terminate</button>
+        <br><br>
+       </div>
+       <div id="inputDiv3">
+         <h2>
+           <label><b>Pod Name</b></label>
+           <input id="in31" type="text" placeholder="Enter name">
+           <br><br>
+           <label><b>Port Number</b></label>
+           <input id="in32" type="text" placeholder="Enter Number">
+         </h2>
+        <br><br>
+   			<button class="btn btn-dark btn-sm" onclick="k8s3();">Click to Run Command</button>
+        <button class="btn btn-light btn-sm" onclick="close3();">Terminate</button>
+        <br><br>
+       </div>
+       <div id="inputDiv4">
+         <h2>
+           <label><b>Pod Name</b></label>
+           <input id="in41" type="text" placeholder="Enter name">
+           <br><br>
+           <label><b>Number of Input</b></label>
+           <input id="in42" type="text" placeholder="Enter Number">
+         </h2>
+        <br><br>
+   			<button class="btn btn-dark btn-sm" onclick="k8s4();">Click to Run Command</button>
+        <button class="btn btn-light btn-sm" onclick="close4();">Terminate</button>
+        <br><br>
+       </div>
+       <!-- <div id="inputDiv5">
+         <h2>
+           <label><b>input1</b></label>
+           <input id="in51" type="text" placeholder="Enter name">
+           <br><br>
+           <label><b>input1</b></label>
+           <input id="in52" type="text" placeholder="Enter name">
+         </h2>
+        <br><br>
+   			<button class="btn btn-dark btn-sm" onclick="k8s5();">Click to Run Command</button>
+        <button class="btn btn-light btn-sm" onclick="close5();">Close</button>
+        <br><br>
+       </div> -->
+       <div id="inputDiv6">
+         <h2>
+           <label><b>Pod Name</b></label>
+           <input id="in61" type="text" placeholder="">
+         </h2>
+        <br><br>
+   			<button class="btn btn-dark btn-sm" onclick="k8s6();">Click to Run Command</button>
+        <button class="btn btn-light btn-sm" onclick="close6();">Terminate</button>
+        <br><br>
+       </div>
+
+     </div>
+       <pre>
+		   <div class="myDiv" id="d1">
+       Output to be shown here....
+      </div>
+      </pre>
+    <script src="app.js"></script>
+  </body>
+</html>
